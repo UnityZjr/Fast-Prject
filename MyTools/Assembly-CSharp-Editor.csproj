@@ -67,6 +67,29 @@
     <Compile Include="Assets\Editor\CreationPrefabTool.cs" />
     <Compile Include="Assets\Editor\CreationPrefabWindow.cs" />
     <Compile Include="Assets\Editor\MyToolEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexArrayActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexArrayAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexClothDeformationEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexContainerEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexFluidMaterialEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexFluidRendererEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSoftSkinningEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSolidActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSolidAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSourceActorEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Editors\FlexSourceAssetEditor.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexActorTests.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexAssetTests.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexExtTests.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexTests.cs" />
+    <Compile Include="Assets\NVIDIA\Flex\Editor\Tests\FlexUtilsTests.cs" />
     <Reference Include="UnityEngine">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -258,6 +281,9 @@
     </Reference>
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.Android.Extensions">
+      <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.12f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:/Program Files (x86)/Microsoft Visual Studio Tools for Unity/16.0/Editor/SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>

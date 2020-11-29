@@ -6,6 +6,13 @@ using UnityEngine.UIElements;
 [RequireComponent(typeof(MeshFilter),typeof(MeshRenderer))]
 public class CreateMesh : MonoBehaviour
 {
+    [Tooltip("测试材质球")]
+    [SerializeField]
+    private Material mat;
+
+    [Tooltip("法向量")]
+    [SerializeField]
+    private Vector3[] normals;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +22,18 @@ public class CreateMesh : MonoBehaviour
         mesh.vertices = GetVertices();
         //三角形序列
         mesh.triangles = GetTriangles();
+
+        mesh.normals = GetNormals();
         mesh.uv = GetUV();
+
+
+     
         MeshFilter meshFilter = GetComponent<MeshFilter>();
         meshFilter.mesh = mesh;
 
-        
+        MeshRenderer renderer = GetComponent<MeshRenderer>();
+        renderer.material = mat;
+
     }
 
     private Vector3[] GetVertices()
@@ -43,14 +57,26 @@ public class CreateMesh : MonoBehaviour
 
         };
     }
+    private Vector3[] GetNormals()
+    {
+        if (normals.Length != 0) return normals;
+        return new Vector3[]
+        {
+           Vector3.up,
+            Vector3.up,
+             Vector3.up,
+              Vector3.up,
+        };
+
+    }
     private Vector2[] GetUV()
     {
         return new Vector2[] 
         {
         new Vector2(0,0),
         new Vector2(0,1),
-        new Vector2(1,1),
-        new Vector2(1,0)
+        new Vector2(1,0),
+        new Vector2(1,1)
         };
 
        
